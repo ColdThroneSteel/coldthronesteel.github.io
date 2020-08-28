@@ -13,7 +13,7 @@
   Vue.component('content-card', {
     props: ['anchor', 'title', 'body'],
     template: `
-    <section class="content-card" v-bind:id="anchor" v-bind:style="background-image: url(image)">
+    <section class="content-card" v-bind:id="anchor" v-bind:style="{background-image: url(image)}">
     <h1 class="content-card__title">{{ title }}</h1>
     <p class="content-card__body">{{ body }}</p>
     </section>`
