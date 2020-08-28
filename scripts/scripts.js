@@ -20,6 +20,9 @@
 
   const root = new Vue({
     el: "#main-content",
+    created: function() {
+      console.log('element has been created')
+    },
     mounted: function() {
       console.log('element has been mounted')
     },
