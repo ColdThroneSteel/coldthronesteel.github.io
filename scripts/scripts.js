@@ -18,9 +18,11 @@
 
   const root = new Vue({
     el: "#main-content",
-    data: contentCards,
+    data: {
+      cards: contentCards
+    },
     template: `
-      <content-card v-for="card in content-cards" v-bind:key="card.anchor" v-bind:anchor="card.anchor" v-bind:title="card.anchor" v-bind:body="card.body"></content-card>
+      <content-card v-for="card in cards" v-bind:key="card.anchor" v-bind:anchor="card.anchor" v-bind:title="card.anchor" v-bind:body="card.body"></content-card>
     `
   });
 
