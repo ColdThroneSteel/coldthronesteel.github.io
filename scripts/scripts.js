@@ -23,7 +23,7 @@
     const root = new Vue({
       el: "#main-content",
       mounted: function() {
-        console.log(contentCards, cards)
+        console.log(contentCards)
       },
       data: {
         cards: contentCards
