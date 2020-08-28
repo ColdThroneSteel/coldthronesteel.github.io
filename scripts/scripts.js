@@ -20,6 +20,9 @@
 
   const root = new Vue({
     el: "#main-content",
+    mounted: function() {
+      console.log('element has been mounted')
+    },
     data: {
       cards: contentCards
     }
