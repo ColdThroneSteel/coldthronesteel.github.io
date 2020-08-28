@@ -18,18 +18,19 @@
     </section>`
   });
 
-  const root = new Vue({
-    el: "#main-content",
-    created: function() {
-      console.log('element has been created')
-    },
-    mounted: function() {
-      console.log('element has been mounted')
-    },
-    data: {
-      cards: contentCards
-    }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const root = new Vue({
+      el: "#main-content",
+      created: function() {
+        console.log('element has been created')
+      },
+      mounted: function() {
+        console.log('element has been mounted')
+      },
+      data: {
+        cards: contentCards
+      }
+    });
+    console.log('root', root);
   });
-
-  console.log('root', root);
 })();
