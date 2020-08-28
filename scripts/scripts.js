@@ -1,4 +1,6 @@
 (function() {
+  console.log('test', Vue);
+
   const contentCards = [
     {
       'anchor': 'hero',
@@ -10,7 +12,7 @@
   Vue.component('content-card', {
     props: ['anchor', 'title', 'body'],
     template: `
-    <section class="content-card" id="{{ anchor }}">
+    <section class="content-card" v-bind:id="anchor">
     <h1 class="content-card__title>{{ title }}</h1>
     <p class="content-card__body">{{ body }}</p>
     </section>`
@@ -26,5 +28,5 @@
     `
   });
 
-  console.log('test', Vue);
+  console.log('root', root);
 })();
