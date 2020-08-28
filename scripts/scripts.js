@@ -13,7 +13,7 @@
     props: ['anchor', 'title', 'body'],
     template: `
     <section class="content-card" v-bind:id="anchor">
-    <h1 class="content-card__title>{{ title }}</h1>
+    <h1 class="content-card__title">{{ title }}</h1>
     <p class="content-card__body">{{ body }}</p>
     </section>`
   });
