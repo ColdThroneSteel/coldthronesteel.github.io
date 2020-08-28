@@ -25,4 +25,4 @@
   });
 
   console.log('test', Vue);
-});
+})();
