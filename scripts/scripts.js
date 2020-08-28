@@ -22,6 +22,9 @@
   window.addEventListener('DOMContentLoaded', (event) => {
     const root = new Vue({
       el: "#main-content",
+      mounted: function() {
+        console.log(contentCards, cards)
+      },
       data: {
         cards: contentCards
       }
