@@ -30,7 +30,7 @@
 }
 
 .content-card__text-content {
-  padding: 20px 0 20px 20px;
+  padding: 20px 10px 20px 20px;
 }
 
 .content-card__title {
@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 768px) {
   .content-card__text-content {
-    padding: 30px 0 30px 30px;
+    padding: 30px 15px 30px 30px;
   }
   
   .content-card {
@@ -63,7 +63,7 @@
 
 @media screen and (min-width: 1024px) {
   .content-card__text-content {
-    padding: 40px 0 40px 40px;
+    padding: 40px 20px 40px 40px;
   }
   
   .content-card {
@@ -73,7 +73,7 @@
 
 @media screen and (min-width: 1440px) {
   .content-card__text-content {
-    padding: 50px 0 50px 50px;
+    padding: 50px 25px 50px 50px;
   }
   
   .content-card {
@@ -83,7 +83,7 @@
 
 @media screen and (min-width: 1920px) {
   .content-card__text-content {
-    padding: 60px 0 60px 60px;
+    padding: 60px 30px 60px 60px;
   }
   
   .content-card {
