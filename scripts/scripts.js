@@ -18,7 +18,7 @@
     <h1 class="content-card__title">{{ title }}</h1>
     <div class="content-card__content-wrapper">
     <p class="content-card__body">{{ body }}</p>
-    <image class="content-card__image" v-bind:src="image"></image>
+    <img class="content-card__image" v-bind:src="image">
     </div>
     </section>`
   });
