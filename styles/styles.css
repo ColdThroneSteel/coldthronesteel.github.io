@@ -17,6 +17,10 @@
   background-color: #f7ebe7;
 }
 
+.content-card:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .content-card__content-wrapper {
   display: flex;
   justify-content: center;
@@ -48,6 +52,10 @@
   .content-card {
     margin: 0 auto;
     max-width: 600px;
+  }
+
+  .content-card:not(:last-child) {
+    margin-bottom: 60px;
   }
 
   .content-card__content-wrapper {
