@@ -22,22 +22,23 @@
     }
   ];
 
-  Vue.component('anchor-link', {
-    props: ['anchor'],
-    template: `
-      <li class="anchor-link"><a v-bind:href="#anchor">{{ anchor }}</a></li>
-    `
-  });
+  const anchors = [
+    {
+      'href': 'hero',
+      'title': 'The Shop'
+    },
+    {
+      'href': 'wares',
+      'title': 'Wares'
+    },
+    {
+      'href': 'services',
+      'title': 'Services'
+    }
+  ]
 
   Vue.component('content-card', {
-    props: ['anchor', 'title', 'image', 'body', 'cards'],
-    computed: {
-      activeAnchors: function() {
-        return cards.filter(function(card) {
-          return card.anchor !== anchor;
-        });
-      }
-    },
+    props: ['anchor', 'title', 'image', 'body'],
     template: `
     <section class="content-card" v-bind:id="anchor">
     <div class="content-card__content-wrapper">
@@ -47,18 +48,12 @@
     </div>
     <img class="content-card__image" v-bind:src="image">
     </div>
-    <ul class="content-card__anchors">
-      <anchor-link v-for="anchor-link in active-anchors" v-bind:anchor="anchor-link.anchor"></anchor-link>
-    </ul>
     </section>`
   });
 
   window.addEventListener('DOMContentLoaded', (event) => {
     const root = new Vue({
       el: "#main-content",
-      mounted: function() {
-        console.log(contentCards)
-      },
       data: {
         cards: contentCards
       }
