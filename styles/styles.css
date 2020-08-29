@@ -45,7 +45,7 @@
     flex-wrap: nowrap;
   }
 
-  .content-card__text-contenty,
+  .content-card__text-content,
   .content-card__image {
     flex: 1 1 50%;
     max-width: 50%;
