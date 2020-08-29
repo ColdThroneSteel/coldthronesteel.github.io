@@ -11,7 +11,6 @@
 .content-card {
   margin: 0 16px;
   width: 100%;
-  padding: 20px;
   border-radius: 20px;
   border: 4px solid #2c160e;
 }
@@ -28,9 +27,13 @@
   max-width: 100%;
 }
 
+.content-card__body {
+  padding: 20px 0 20px 20px;
+}
+
 @media screen and (min-width: 768px) {
-  .main-content {
-    padding: 30px 0;
+  .content-card__body {
+    padding: 30px 0 30px 30px;
   }
   
   .content-card {
@@ -50,8 +53,8 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .main-content {
-    padding: 40px 0;
+  .content-card__body {
+    padding: 40px 0 40px 40px;
   }
   
   .content-card {
@@ -60,8 +63,8 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .main-content {
-    padding: 50px 0;
+  .content-card__body {
+    padding: 50px 0 50px 50px;
   }
   
   .content-card {
@@ -70,8 +73,8 @@
 }
 
 @media screen and (min-width: 1920px) {
-  .main-content {
-    padding: 60px 0;
+  .content-card__body {
+    padding: 60px 0 60px 60px;
   }
   
   .content-card {
