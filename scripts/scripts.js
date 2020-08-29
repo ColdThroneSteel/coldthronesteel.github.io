@@ -5,17 +5,21 @@
     {
       'anchor': 'hero',
       'title': 'Cold Throne Steel',
-      'image': 'assets/exterior-shop-6.png',
+      'backgroundimage': 'assets/exterior-shop-6.png',
+      'image': 'assets/kathrine-displaying-the-goods.png',
       'body': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
     }
   ];
 
   Vue.component('content-card', {
-    props: ['anchor', 'title', 'image', 'body'],
+    props: ['anchor', 'title', 'image', 'backgroundimage', 'body'],
     template: `
-    <section class="content-card" v-bind:id="anchor" v-bind:style="{'background-image': 'url(' + image + ')'}">
+    <section class="content-card" v-bind:id="anchor" v-bind:style="{'background-image': 'url(' + backgroundimage + ')'}">
     <h1 class="content-card__title">{{ title }}</h1>
+    <div class="content-card__content-wrapper">
     <p class="content-card__body">{{ body }}</p>
+    <image class="content-card__image" v-bind:src="image"></image>
+    </div>
     </section>`
   });
 
