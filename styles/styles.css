@@ -77,6 +77,10 @@
   .content-card {
     max-width: 800px;
   }
+
+  .content-card:not(:last-child) {
+    margin-bottom: 80px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -87,6 +91,10 @@
   .content-card {
     max-width: 1000px;
   }
+
+  .content-card:not(:last-child) {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -96,5 +104,9 @@
   
   .content-card {
     max-width: 1200px;
+  }
+
+  .content-card:not(:last-child) {
+    margin-bottom: 120px;
   }
 }
