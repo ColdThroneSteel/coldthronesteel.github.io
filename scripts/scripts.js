@@ -32,7 +32,7 @@
   Vue.component('content-card', {
     props: ['anchor', 'title', 'image', 'body', 'cards'],
     computed: {
-      activeAnchors = function() {
+      activeAnchors: function() {
         return cards.filter(function(card) {
           return card.anchor !== anchor;
         });
