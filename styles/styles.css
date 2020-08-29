@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
 }
 
 .main-content {
@@ -13,6 +14,7 @@
   width: 100%;
   border-radius: 20px;
   border: 4px solid #2c160e;
+  background-color: #f7ebe7;
 }
 
 .content-card__content-wrapper {
@@ -27,8 +29,15 @@
   max-width: 100%;
 }
 
-.content-card__body {
+.content-card__text-content {
   padding: 20px 0 20px 20px;
+}
+
+.content-card__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'EB Garamond', serif;
 }
 
 @media screen and (min-width: 768px) {
