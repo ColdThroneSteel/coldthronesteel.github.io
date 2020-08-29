@@ -18,15 +18,14 @@
 
 .content-card__content-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  flex-wrap: nowrap;
 }
 
 .content-card__body,
 .content-card__image {
-  flex: 1 1 50%;
-  max-width: 50%;
+  flex: 1 0 100%;
+  max-width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -37,6 +36,16 @@
   .content-card {
     margin: 0 auto;
     max-width: 600px;
+  }
+
+  .content-card__content-wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .content-card__body,
+  .content-card__image {
+    flex: 1 1 50%;
+    max-width: 50%;
   }
 }
 
