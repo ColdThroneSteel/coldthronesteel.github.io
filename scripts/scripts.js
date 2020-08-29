@@ -14,9 +14,11 @@
     props: ['anchor', 'title', 'image', 'body'],
     template: `
     <section class="content-card" v-bind:id="anchor">
-    <h1 class="content-card__title">{{ title }}</h1>
     <div class="content-card__content-wrapper">
+    <div class="content-card__text-content">
+    <h1 class="content-card__title">{{ title }}</h1>
     <p class="content-card__body">{{ body }}</p>
+    </div>
     <img class="content-card__image" v-bind:src="image">
     </div>
     </section>`
