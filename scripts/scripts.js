@@ -115,13 +115,13 @@
     methods: {
     scrollToAnchor: function (event) {
       event.preventDefault();
-      const elementToScrollTo = document.querySelector(event.target.getAttribute(href));
+      const elementToScrollTo = document.querySelector(event.target.getAttribute('href'));
       const scrollOptions = {behavior: 'smooth'};
       elementToScrollTo.scrollIntoView(scrollOptions);
     }
   },
     template: `
-    <li class="nav-link"><a v-bind:href="link.href" class="nav-bar__link">{{ link.title }}</a></li>
+    <li class="nav-link"><a v-bind:href="link.href" class="nav-bar__link" v-on:click="scrollToAnchor($event)">{{ link.title }}</a></li>
     `
   });
 
