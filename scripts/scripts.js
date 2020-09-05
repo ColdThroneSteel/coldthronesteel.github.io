@@ -25,7 +25,7 @@
   const navTabs = [
     {
       'title': 'IC',
-      'id': '#ic',
+      'id': 'ic',
       'links': [
         {
           'href': '#hero',
@@ -43,7 +43,7 @@
     },
     {
       'title': 'OOC',
-      'id': '#ooc',
+      'id': 'ooc',
       'links': [
         {
           'href': '#hero',
@@ -61,7 +61,7 @@
     },
     {
       'title': 'Cast',
-      'id': '#characters',
+      'id': 'cast',
       'links': [
         {
           'href': '#kathrine',
@@ -85,15 +85,31 @@
       isFirst(index) {
         return (index === 0? true : false);
       },
-      toggleTabLinks() {
-        const tabLinks = document.querySelector('.nav-bar__tab-links');
-        tabLinks.classList.toggle('open');
+      toggleTabLinks(event) {
+        if (event.target === event.currentTarget) {
+          const tabLinks = document.querySelector('.nav-bar__tab-links');
+          tabLinks.classList.toggle('open');
+        }
+      },
+      toggleTab(event) {
+        event.preventDefault();
+        const activeTabLink = document.querySelector('.nav-bar__tab-link.active');
+        const targetedTabLink = event.target.parentNode;
+        const activeTab = document.querySelector('.nav-tab.active');
+        const targetedTab = document.querySelector('#' + event.target.getAttribute('href'));
+        if(activeTab !== targetedTab) {
+          activeTab.classList.toggle('active');
+          activeTabLink.classList.toggle('active');
+          targetedTab.classList.toggle('active');
+          targetedTabLink.classList.toggle('active');
+          targetedTabLink.parentNode.click();
+        }
       }
     },
     template: `
     <nav class="nav-bar">
-    <ul class="nav-bar__tab-links" v-on:click="toggleTabLinks">
-    <li v-bind:class="{ 'active': isFirst(index), 'nav-bar__tab-link': true }" v-for="(tab, index) in tabs"><a v-bind:href="tab.id" v-bind:disabled="isFirst(index)" class="nav-bar__link">{{ tab.title }}</a></li>
+    <ul class="nav-bar__tab-links" v-on:click="toggleTabLinks($event)">
+    <li v-bind:class="{ 'active': isFirst(index), 'nav-bar__tab-link': true }" v-for="(tab, index) in tabs"><a v-bind:href="tab.id" v-on:click="toggleTab($event)" class="nav-bar__link">{{ tab.title }}</a></li>
     </ul>
     <section class="nav-bar__tabs">
     <slot></slot>
@@ -105,7 +121,7 @@
   Vue.component('nav-tab', {
     props: ['tab', 'index'],
     template: `
-    <div class="nav-tab" v-bind:class="{ 'active': index === 0 }">
+    <div class="nav-tab" v-bind:id="tab.id" v-bind:class="{ 'active': index === 0 }">
     <h2 class="nav-tab__title">{{ tab.title }}</h2>
     <ul class="nav-tab__links">
     <slot></slot>

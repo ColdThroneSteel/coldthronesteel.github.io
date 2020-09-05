@@ -26,6 +26,8 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 6px;
+  transition: width 0.3s ease;
 }
 
 .nav-bar__tab-links::after {
@@ -47,6 +49,10 @@ body {
   transform: scaleX(-1);
 }
 
+.nav-bar__tab-links.open {
+  width: 100%;
+}
+
 .nav-bar__tab-links.open .nav-bar__tab-link {
   height: auto;
   max-width: 40px;
@@ -64,6 +70,11 @@ body {
 .nav-bar__link {
   text-decoration: none;
   color: #aaa;
+}
+
+.nav-bar__tab-link.active .nav-bar__link {
+  color: #888;
+  cursor: default;
 }
 
 .nav-tab:not(.active) {
