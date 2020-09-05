@@ -89,7 +89,7 @@
     template: `
     <nav class="nav-bar">
     <ul class="nav-bar__tab-links">
-    <li class="nav-bar__tab-link" v-for="(tab, index) in tabs"><a v-bind:href="tab.id" v-bind:disabled="isFirst(index)" v-bind:class="{ 'active': isFirst(index), 'nav-bar__link': true }">{{ tab.title }}</a></li>
+    <li v-bind:class="{ 'active': isFirst(index), 'nav-bar__tab-link': true }" v-for="(tab, index) in tabs"><a v-bind:href="tab.id" v-bind:disabled="isFirst(index)" class="nav-bar__link">{{ tab.title }}</a></li>
     </ul>
     <section class="nav-bar__tabs">
     <slot></slot>
@@ -112,6 +112,14 @@
   
   Vue.component('nav-link', {
     props: ['link'],
+    methods: {
+    scrollToAnchor: function (event) {
+      event.preventDefault();
+      const elementToScrollTo = document.querySelector(event.target.getAttribute(href));
+      const scrollOptions = {behavior: 'smooth'};
+      elementToScrollTo.scrollIntoView(scrollOptions);
+    }
+  },
     template: `
     <li class="nav-link"><a v-bind:href="link.href" class="nav-bar__link">{{ link.title }}</a></li>
     `
