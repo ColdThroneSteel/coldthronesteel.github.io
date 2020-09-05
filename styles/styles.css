@@ -55,7 +55,7 @@ body {
 
 .nav-bar__tab-links.open .nav-bar__tab-link {
   height: auto;
-  max-width: 40px;
+  max-width: 65px;
   margin-right: 10px;
 }
 

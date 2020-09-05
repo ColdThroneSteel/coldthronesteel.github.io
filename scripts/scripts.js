@@ -3,22 +3,26 @@
 
   const contentCards = [
     {
+      title: 'IC',
       id: 'ic',
       content: [
       {
         anchor: 'hero',
+        anchorTitle: "Shop",
         title: 'Cold Throne Steel',
         image: 'assets/exterior-shop-6.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       },
       {
         anchor: 'wares',
+        anchorTitle: "Wares",
         title: 'Fine Ishgardian craftsmanship',
         image: 'assets/kathrine-displaying-the-goods.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       },
       {
         anchor: 'services',
+        anchorTitle: "Services",
         title: 'Peerless Service',
         image: 'assets/kathrine-at-work.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
@@ -26,106 +30,197 @@
       ]
     },
     {
+      title: 'OOC',
       id: 'ooc',
       content: [
       {
         anchor: 'hero',
+        anchorTitle: "RP",
         title: 'An RP-Focused FC!',
         image: 'assets/kathrine-being-courteous.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       },
       {
         anchor: 'events',
-        title: 'Incredible RP Events!',
+        anchorTitle: "Events",
+        title: 'Incredibly Fun Events!',
         image: 'assets/kathrine-chatting.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       },
       {
         anchor: 'raids',
-        title: 'Regular Savage Raids!',
+        anchorTitle: "Raids",
+        title: 'Savage Raid Static!',
         image: 'assets/kathrine-tired-2.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       }
       ]
     },
     {
-      id: 'cast',
+      title: 'Members',
+      id: 'members',
       content: [
       {
         anchor: 'kathrine',
+        anchorTitle: "Kathrine",
         title: 'Kathrine Throne',
         image: 'assets/kathrine-being-welcoming.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       },
       {
         anchor: 'bardon',
+        anchorTitle: "Bardon",
         title: 'Bardon Steele',
         image: 'assets/kathrine-being-reserved.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       },
       {
         anchor: 'lagmera',
+        anchorTitle: "Lagmera",
         title: 'Lagmera Argus',
         image: 'assets/kathrine-tired.png',
         body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'luvsan',
+        anchorTitle: "Luvsan",
+        title: 'Luvsan Dazkar',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'tae',
+        anchorTitle: "Taerha",
+        title: 'Taerha Njoren',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'allfea',
+        anchorTitle: "Allfea",
+        title: 'Allfea Soulmen',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'osorio',
+        anchorTitle: "Osorio",
+        title: 'Osorio Azentia',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'ayano',
+        anchorTitle: "Ayano",
+        title: 'Ayano Tamashiro',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'clem',
+        anchorTitle: "Clementine",
+        title: 'Clementine Wehlls',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'adryn',
+        anchorTitle: "Adryn",
+        title: 'Adryn Bell',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'snihma',
+        anchorTitle: "S\'nihma",
+        title: 'S\'nihma Tahsi',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'dahzi',
+        anchorTitle: "Dah\'zi",
+        title: 'Dah\'zi Mawp',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'snithe',
+        anchorTitle: "Snithe",
+        title: 'Snithe Zhwan',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'lone',
+        anchorTitle: "Lone",
+        title: 'Lone Tower',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'kriv',
+        anchorTitle: "Kriv",
+        title: 'Kriv Delmirev',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'temarie',
+        anchorTitle: "Temarie",
+        title: 'Temarie Weiss',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'touissant',
+        anchorTitle: "Touissant",
+        title: 'Touissant Verdeaux',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'noelle',
+        anchorTitle: "Noelle",
+        title: 'Noelle Liautroix',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'wheirael',
+        anchorTitle: "Wheirael",
+        title: 'Wheirael Bylglorhwyn',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'sthalhylt',
+        anchorTitle: "Sthalhylt",
+        title: 'Sthalhylt Fyrberksyn',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'ael',
+        anchorTitle: "Ael",
+        title: 'Ael Beineaux',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'mogryn',
+        anchorTitle: "Mogryn",
+        title: 'Mogryn Greywolfe',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      },
+      {
+        anchor: 'barry',
+        anchorTitle: "Barry",
+        title: 'Barry Brandt',
+        image: 'assets/kathrine-tired.png',
+        body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
       }
-      ]
-    }
-  ];
-
-  const navTabs = [
-    {
-      'title': 'IC',
-      'id': 'ic',
-      'links': [
-        {
-          'href': '#hero',
-          'title': 'The Shop'
-        },
-        {
-          'href': '#wares',
-          'title': 'Wares'
-        },
-        {
-          'href': '#services',
-          'title': 'Services'
-        }
-      ]
-    },
-    {
-      'title': 'OOC',
-      'id': 'ooc',
-      'links': [
-        {
-          'href': '#hero',
-          'title': 'The Shop'
-        },
-        {
-          'href': '#events',
-          'title': 'Events'
-        },
-        {
-          'href': '#raids',
-          'title': 'Raids'
-        }
-      ]
-    },
-    {
-      'title': 'Cast',
-      'id': 'cast',
-      'links': [
-        {
-          'href': '#kathrine',
-          'title': 'Kathrine Throne'
-        },
-        {
-          'href': '#bardon',
-          'title': 'Bardon Steele'
-        },
-        {
-          'href': '#lagmera',
-          'title': 'Lagmera Argus'
-        }
       ]
     }
   ];
@@ -187,13 +282,13 @@
     methods: {
     scrollToAnchor: function (event) {
       event.preventDefault();
-      const elementToScrollTo = document.querySelector(event.target.getAttribute('href'));
+      const elementToScrollTo = document.querySelector('#' + event.target.getAttribute('href'));
       const scrollOptions = {behavior: 'smooth'};
       elementToScrollTo.scrollIntoView(scrollOptions);
     }
   },
     template: `
-    <li class="nav-link"><a v-bind:href="link.href" class="nav-bar__link" v-on:click="scrollToAnchor($event)">{{ link.title }}</a></li>
+    <li class="nav-link"><a v-bind:href="link.anchor" class="nav-bar__link" v-on:click="scrollToAnchor($event)">{{ link.anchorTitle }}</a></li>
     `
   });
 
@@ -216,7 +311,7 @@
       el: "#shop-app",
       data: {
         cards: contentCards[0].content,
-        tabs: navTabs
+        tabs: contentCards
       }
     });
   });
