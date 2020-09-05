@@ -60,7 +60,7 @@
       ]
     },
     {
-      'title': 'Characters',
+      'title': 'Cast',
       'id': '#characters',
       'links': [
         {
@@ -84,11 +84,15 @@
     methods: {
       isFirst(index) {
         return (index === 0? true : false);
+      },
+      toggleTabLinks() {
+        const tabLinks = document.querySelector('.nav-bar__tab-links');
+        tabLinks.classList.toggle('open');
       }
     },
     template: `
     <nav class="nav-bar">
-    <ul class="nav-bar__tab-links">
+    <ul class="nav-bar__tab-links" v-on:click="toggleTabLinks">
     <li v-bind:class="{ 'active': isFirst(index), 'nav-bar__tab-link': true }" v-for="(tab, index) in tabs"><a v-bind:href="tab.id" v-bind:disabled="isFirst(index)" class="nav-bar__link">{{ tab.title }}</a></li>
     </ul>
     <section class="nav-bar__tabs">

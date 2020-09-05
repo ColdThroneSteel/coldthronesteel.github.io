@@ -22,8 +22,10 @@ body {
   border-bottom-right-radius: 100px
 }
 
-.nav-bar__tab-link {
-  display: none;
+.nav-bar__tab-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .nav-bar__tab-links::after {
@@ -37,10 +39,26 @@ body {
   border-left: 6px solid #f7ebe7;
   margin-bottom: 20px;
   cursor: pointer;
+  transition: transform 0.4s ease;
+  margin-right: 10px;
 }
 
-.nav-bar__tab-link:not(:last-child) {
+.nav-bar__tab-links.open::after {
+  transform: scaleX(-1);
+}
+
+.nav-bar__tab-links.open .nav-bar__tab-link {
+  height: auto;
+  max-width: 40px;
   margin-right: 10px;
+}
+
+.nav-bar__tab-link {
+  display: block;
+  max-width: 0;
+  height: 0;
+  overflow: hidden;
+  transition: max-width 0.3s ease;
 }
 
 .nav-bar__link {
