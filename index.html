@@ -29,14 +29,16 @@
     <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body id="shop-app">
-    <nav-bar v-bind:tabs="tabs">
-      <nav-tab v-for="(tab, index) in tabs" v-bind:tab="tab" v-bind:index="index">
-        <nav-link v-for="link in tab.links" v-bind:link="link"></nav-link>
-      </nav-tab>
-    </nav-bar>
-    <main class="main-content">
-      <content-card v-for="card in cards" v-bind:key="card.anchor" v-bind:anchor="card.anchor" v-bind:title="card.title" v-bind:body="card.body" v-bind:image="card.image"></content-card>
-    </main>
+  <body>
+    <div id="shop-app">
+      <nav-bar v-bind:tabs="tabs">
+        <nav-tab v-for="(tab, index) in tabs" v-bind:tab="tab" v-bind:index="index">
+          <nav-link v-for="link in tab.links" v-bind:link="link"></nav-link>
+        </nav-tab>
+      </nav-bar>
+      <main class="main-content">
+        <content-card v-for="card in cards" v-bind:key="card.anchor" v-bind:anchor="card.anchor" v-bind:title="card.title" v-bind:body="card.body" v-bind:image="card.image"></content-card>
+      </main>
+    </div>
   </body>
 </html>
